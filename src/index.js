@@ -9,5 +9,5 @@ app.use(express.urlencoded({extended:false}));
 app.use(require('./routes/index.js'));
 
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log('escuchando en el puerto 3000',);
